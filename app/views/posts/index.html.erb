@@ -1,0 +1,9 @@
+User ID: <%= @user.id %> -- 
+User First Name: <%= @user.fname %>
+<br/>
+<% @posts.each do |post| %>
+  -- Post ID: <%= post.id %> -- 
+ Post Title: <%= post.title %> -- 
+ Post Body: <%= post.body %>
+ <br/>
+<% end %>
